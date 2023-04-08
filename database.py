@@ -1,7 +1,8 @@
+import os
 from sqlalchemy import create_engine, text
+my_secret = os.environ['connection_db']
 
-engine = create_engine(
-  f'mysql+pymysql://qbjsdkn7ipqpuu1sj94j:pscale_pw_4Hlo3ppH5SqMPEp0syuG3Ibp3JPg14CVkaVC6oFCDP6@aws.connect.psdb.cloud/codeasy',
+engine = create_engine(my_secret,
   connect_args={"ssl": {
     "ssl_ca": "/etc/ssl/cert.pem"
   }})
