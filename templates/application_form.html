@@ -1,0 +1,36 @@
+  <div class="container">
+          <form action="/job/{{job.id}}/apply" method="post">
+    <h3 class='text-center mt-2 mb-4'>Application Form</h3>
+    <div class="row mb-4">
+  <label class="col-4">Name</label>
+  <input type="text" name="full_name" placeholder="sample_name" class="col-8">
+    </div>
+    <div class="row mb-4">
+  <label class="col-4">Email</label>
+  <input type="text" name="email" placeholder="sample_name@mail.com" class="col-8">
+    </div>
+    <div class="row mb-4">
+  <label class="col-4">Phone Number</label>
+  <input type="text" name="number" placeholder="918XXXXXX6" class="col-8">
+    </div>
+    <div class="row mb-4">
+  <label class="col-4">LinkedIn</label>
+  <input type="text" name="linkedin" placeholder="https://linkedin.com/in/sample_name" class="col-8">
+    </div>
+    <div class="row mb-4">
+  <label class="col-4">Education</label>
+  <textarea type="text" name="education" placeholder="Enter your Academic details" class="col-8"></textarea>
+    </div>
+    <div class="row mb-4">
+  <label class="col-4">Experience(if any)</label>
+  <textarea type="text" name="experience" placeholder="Enter your Work Experience details" class="col-8"></textarea>
+    </div>
+                <div class="row mb-4">
+  <label class="col-4">Resume URL</label>
+  <input type="text" name="resume" placeholder="Your Resume URL or Portfolio" class="col-8">
+    </div>
+    <div>
+      <input type="submit" placeholder="Submit">
+    </div>
+    </form>
+  </div>

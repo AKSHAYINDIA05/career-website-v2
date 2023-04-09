@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success</title>
+  {% include 'bootstrap.html' %}
+</head>
+<body>
+  {% include 'nav.html' %}
+  <div style="height:56px"></div>
+    <div class="container">
+    <h3 class='text-center mt-2 mb-4'>Application Submitted Succesfully for the role <b>{{job.title}}</b></h3>
+    <div class="row mb-4">
+  <div class="col-4">Name</div>
+  <div class="col-8">{{application.full_name}}</div>
+    </div>
+    <div class="row mb-4">
+  <div class="col-4">Email</div>
+  <div class="col-8">{{application.email}}</div>
+    </div>
+    <div class="row mb-4">
+  <div class="col-4">Phone Number</div>
+  <div class="col-8">{{application.number}}</div>
+    </div>
+    <div class="row mb-4">
+  <div class="col-4">LinkedIn</div>
+  <div class="col-8">{{application.linkedin}}</div>
+    </div>
+    <div class="row mb-4">
+  <div class="col-4">Education</div>
+  <div class="col-8">{{application.education}}</div>
+    </div>
+    <div class="row mb-4">
+  <div class="col-4">Experience(if any)</div>
+  <div class="col-8">{{application.experience}}</div>
+    </div>
+                <div class="row mb-4">
+  <div class="col-4">Resume URL</div>
+  <div class="col-8">{{application.resume}}</div>
+    </div>
+  </div>
+  {% include 'footer.html' %}
+</body>
+</html>
